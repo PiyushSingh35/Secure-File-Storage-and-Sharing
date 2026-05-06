@@ -1,0 +1,235 @@
+SETUP INSTRUCTIONS FOR PROJECT 2 - GITHUB
+
+Files to Create/Use:
+
+1. README.md (rename from README_PROJECT2.md)
+2. CONTRIBUTING.md (rename from CONTRIBUTING_PROJECT2.md)
+3. package.json
+4. .env.example
+5. .gitignore (rename from .gitignore_NODE)
+
+---
+
+STEP-BY-STEP SETUP:
+
+Step 1: Download Files
+
+Download all 5 files from the outputs folder:
+- README_PROJECT2.md
+- CONTRIBUTING_PROJECT2.md
+- package.json
+- .env.example
+- .gitignore_NODE
+
+Step 2: Rename Files
+
+Rename these files:
+- README_PROJECT2.md → README.md
+- CONTRIBUTING_PROJECT2.md → CONTRIBUTING.md
+- .gitignore_NODE → .gitignore
+
+Step 3: Place in Your Project Folder
+
+Your File Storage folder should have:
+
+Secure-File-Storage/
+├── .gitignore
+├── README.md
+├── CONTRIBUTING.md
+├── package.json
+├── .env.example
+├── .env (create this yourself)
+├── server.js
+├── models/
+│   ├── User.js
+│   ├── File.js
+│   └── ShareToken.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── fileRoutes.js
+│   └── shareRoutes.js
+├── middleware/
+│   └── auth.js
+└── utils/
+    └── encryption.js
+
+Step 4: Create .env File
+
+Create .env file in project root:
+
+PORT=5000
+BASE_URL=http://localhost:5000
+MONGODB_URI=mongodb://localhost:27017/secure-file-storage
+JWT_SECRET=your-super-secret-key-change-this
+ENCRYPTION_KEY=your-256-bit-key-in-production
+
+Step 5: Open PowerShell in Project Folder
+
+cd "D:\CV PROJECT\Secure File Storage"
+
+Step 6: Initialize Git
+
+git init
+git add .
+git commit -m "Initial commit: Secure File Storage & Sharing Application"
+
+Step 7: Create Repository on GitHub
+
+1. Go to https://github.com/new
+2. Repository name: Secure-File-Storage
+3. Description: End-to-end encrypted file storage and sharing application with AES-256-GCM
+4. Select: Public
+5. Click: Create repository
+
+Step 8: Connect to GitHub
+
+Replace YOUR_USERNAME with your actual GitHub username:
+
+git remote add origin https://github.com/YOUR_USERNAME/Secure-File-Storage.git
+git branch -M main
+git push -u origin main
+
+Step 9: Verify on GitHub
+
+1. Go to https://github.com/YOUR_USERNAME/Secure-File-Storage
+2. You should see:
+   - README.md displayed beautifully
+   - All your Node.js files
+   - CONTRIBUTING.md visible
+   - package.json available
+   - .env.example shown
+   - .gitignore applied
+
+---
+
+FILE DETAILS:
+
+README.md
+- Complete project documentation
+- Features list
+- Tech stack overview
+- Project structure diagram
+- Setup instructions with MongoDB
+- Complete API endpoint reference
+- How to use guide with Postman examples
+- Security details (AES-256-GCM)
+- Database schema definitions
+- Environment variables reference
+- Troubleshooting guide
+- Learning outcomes
+- Future improvements
+- Code examples
+
+CONTRIBUTING.md
+- How developers can contribute
+- Code style guide (JavaScript)
+- Testing requirements
+- Test scenarios checklist
+- Git workflow instructions
+- Commit message format
+- Pull request guidelines
+- Code review process
+- Development environment setup
+- Project structure guide
+- Best practices
+- Code of conduct
+
+package.json
+- Node.js project metadata
+- All dependencies listed
+- npm start and dev scripts
+- Version information
+- Author details
+
+.env.example
+- Template for environment variables
+- Shows what variables are needed
+- No actual secrets (safe to commit)
+- Helps developers know what to configure
+
+.gitignore
+- Excludes node_modules
+- Excludes .env (secrets not committed)
+- Excludes IDE files
+- Excludes logs and temp files
+- Excludes OS specific files
+- Keeps repository clean
+
+---
+
+IMPORTANT NOTES:
+
+1. Rename files correctly:
+   - README_PROJECT2.md → README.md
+   - CONTRIBUTING_PROJECT2.md → CONTRIBUTING.md
+   - .gitignore_NODE → .gitignore
+
+2. Create .env file yourself (NOT committed to GitHub for security)
+
+3. .env.example shows what variables are needed (safe to commit)
+
+4. All Node.js files stay in project root
+
+5. Install dependencies with: npm install
+
+6. Start server with: npm start
+
+7. Test endpoints in Postman before pushing
+
+---
+
+GITHUB SETUP COMPLETE!
+
+Your project is now:
+✓ On GitHub (public)
+✓ Well documented (README)
+✓ Ready for contributions (CONTRIBUTING)
+✓ Properly configured (package.json, .env.example)
+✓ Clean repository (.gitignore)
+✓ Professional looking
+
+Recruiters can:
+- See your Node.js backend code
+- Read complete documentation
+- Understand API structure
+- See security implementation
+- Review MongoDB schema
+- Learn contribution guidelines
+
+---
+
+ADDITIONAL STEPS (Optional):
+
+Step 1: Test Before Pushing
+
+Run server:
+npm install
+npm start
+
+Test in Postman:
+- Register user
+- Login
+- Upload file
+- Download file
+- Create share link
+- Download via public link
+
+Step 2: Add Example .env to Git (safe practice)
+
+Create .env.example with template (already provided)
+This helps developers know what variables they need
+
+Step 3: Create Issues/Discussions
+
+Set up GitHub Issues for:
+- Bug reports
+- Feature requests
+- Questions
+
+This helps community engagement
+
+---
+
+PERFECT! Your Project 2 is ready for GitHub!
+
+Just rename the files, place in project folder, and push!
